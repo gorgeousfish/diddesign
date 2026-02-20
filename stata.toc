@@ -1,0 +1,15 @@
+v 3
+d DIDdesign: Analyzing and Diagnosing the Difference-in-Differences Design
+d
+d Authors: Xuanyu Cai (xuanyuCAI@outlook.com)
+d          Wenli Xu (wlxu@cityu.edu.mo)
+d
+d Statistical tools for analyzing and diagnosing the difference-in-differences
+d design and the staggered adoption design. The methods implemented in this
+d package are proposed in Egami and Yamauchi (2022) <arXiv:2102.09948>.
+d
+d Requires: Stata 16.0 or later
+d
+d Distribution-Date: 20260117
+d
+p diddesign DIDdesign: Difference-in-Differences Analysis

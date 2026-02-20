@@ -1,0 +1,67 @@
+v 3
+d DIDdesign: Analyzing and Diagnosing the Difference-in-Differences Design
+d
+d Version: 0.1.0
+d
+d Authors: Xuanyu Cai (xuanyuCAI@outlook.com)
+d          Wenli Xu (wlxu@cityu.edu.mo)
+d
+d Methodology: Naoki Egami and Soichiro Yamauchi
+d
+d Support: https://github.com/gorgeousfish/diddesign
+d
+d Statistical tools for analyzing and diagnosing the difference-in-differences
+d design and the staggered adoption design. Implements the Double DID estimator
+d from Egami and Yamauchi (2022) <arXiv:2102.09948>.
+d
+d This Stata package is a faithful implementation of the R package DIDdesign,
+d providing identical functionality and numerical results.
+d
+d Requires: Stata 16.0 or later
+d
+d Distribution-Date: 20260117
+d
+d ============================================================================
+d INSTALLATION FILES
+d ============================================================================
+d
+d Ado Files (Commands):
+f ado/diddesign.ado
+f ado/diddesign_check.ado
+f ado/diddesign_plot.ado
+f ado/_diddesign_parse.ado
+f ado/_diddesign_prep.ado
+f ado/_diddesign_utils.ado
+f ado/_diddesign_sa.ado
+f ado/_diddesign_error.ado
+f ado/_diddesign_warning.ado
+f ado/_diddesign_display_header.ado
+f ado/_diddesign_display_footer.ado
+f ado/_diddesign_display_result.ado
+f ado/_diddesign_display_table_header.ado
+f ado/diddesign_data.ado
+d
+d Mata Files (Core Computation):
+f mata/diddesign_mata.do
+f mata/did_utils.mata
+f mata/did_estimators.mata
+f mata/did_bootstrap.mata
+f mata/did_gmm.mata
+f mata/did_sa.mata
+f mata/did_check.mata
+d
+d Help Files (Documentation):
+f sthlp/diddesign.sthlp
+f sthlp/diddesign_check.sthlp
+f sthlp/diddesign_plot.sthlp
+f sthlp/diddesign_intro.sthlp
+f sthlp/diddesign_data.sthlp
+d
+d Example Files:
+f examples/example_paglayan.do
+f examples/example_malesky.do
+d
+d Data Files:
+f examples/data/paglayan2019.dta
+f examples/data/malesky2014.dta
+f examples/data/anzia2012.dta
