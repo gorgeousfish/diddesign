@@ -1,0 +1,68 @@
+v 3
+d DIDdesign: Analyzing and Diagnosing the Difference-in-Differences Design
+d
+d Version: 1.0.0
+d
+d Authors: Naoki Egami (naoki.egami5@gmail.com)
+d          Soichiro Yamauchi (syamauchi@g.harvard.edu)
+d
+d Support: https://github.com/naoki-egami/DIDdesign
+d
+d Statistical tools for analyzing and diagnosing the difference-in-differences
+d design and the staggered adoption design. Implements the Double DID estimator
+d and the generalized K-DID extension from Egami and Yamauchi (2023).
+d
+d Features: Double DID via GMM, generalized K-DID with kmax() option,
+d J-test moment selection, staggered adoption design, parallel bootstrap,
+d parallel trends diagnostics with equivalence confidence intervals.
+d
+d Requires: Stata 16.0 or later
+d
+d Distribution-Date: 20260415
+d
+d ============================================================================
+d INSTALLATION FILES
+d ============================================================================
+d
+d Ado Files (Commands):
+f ado/diddesign.ado
+f ado/diddesign_check.ado
+f ado/diddesign_plot.ado
+f ado/_diddesign_parse.ado
+f ado/_diddesign_prep.ado
+f ado/_diddesign_utils.ado
+f ado/_diddesign_expand_covariates.ado
+f ado/_diddesign_sa.ado
+f ado/_diddesign_error.ado
+f ado/_diddesign_warning.ado
+f ado/_diddesign_display_header.ado
+f ado/_diddesign_display_footer.ado
+f ado/_diddesign_display_result.ado
+f ado/_diddesign_display_table_header.ado
+f ado/_diddesign_parallel_boot.ado
+f ado/_diddesign_parallel_worker.ado
+f ado/_diddesign_load_mata.ado
+d
+d Mata Files (Core Computation):
+F mata/diddesign_mata.do
+f mata/did_utils.mata
+f mata/did_estimators.mata
+f mata/did_bootstrap.mata
+f mata/did_gmm.mata
+f mata/did_sa.mata
+f mata/did_check.mata
+d
+d Help Files (Documentation):
+f sthlp/diddesign.sthlp
+f sthlp/diddesign_check.sthlp
+f sthlp/diddesign_plot.sthlp
+f sthlp/diddesign_intro.sthlp
+d
+d ============================================================================
+d ANCILLARY FILES (Examples and Data)
+d ============================================================================
+d
+f example_paglayan.do
+f example_malesky.do
+F malesky2014.dta
+F paglayan2019.dta

@@ -1,0 +1,30 @@
+# Stata log files (exclude example output which is part of release)
+*.log
+!examples/output/*.log
+
+# Stata temporary files
+*.smcl
+*.gph
+
+# Compiled Mata library (auto-built)
+mata/*.mlib
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*~
+*.swp
+*.swo
+
+# Test output
+tests/r_results/*.csv
+tests/*.png
+tests/*.pdf
+tests/*.csv
+
+# Excluded directories
+verification/
+tests/
+docs/
