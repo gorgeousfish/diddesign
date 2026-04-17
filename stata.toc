@@ -1,15 +1,17 @@
 v 3
-d DIDdesign: Analyzing and Diagnosing the Difference-in-Differences Design
+d diddesign: Double DID estimation with multiple pre-treatment periods in Stata
 d
-d Authors: Naoki Egami (naoki.egami5@gmail.com)
-d          Soichiro Yamauchi (syamauchi@g.harvard.edu)
+d Authors: Xuanyu Cai (xuanyuCAI@outlook.com)
+d          Wenli Xu (wlxu@cityu.edu.mo)
+d          City University of Macau
 d
-d Statistical tools for analyzing and diagnosing the difference-in-differences
-d design and the staggered adoption design. The methods implemented in this
-d package are proposed in Egami and Yamauchi (2022) <arXiv:2102.09948>.
+d Stata implementation of the Double DID estimator and the generalized
+d K-DID extension of Egami and Yamauchi (2023, Political Analysis);
+d original R package DIDdesign by Naoki Egami and Soichiro Yamauchi
+d (https://github.com/naoki-egami/DIDdesign).
 d
 d Requires: Stata 16.0 or later
 d
-d Distribution-Date: 20260117
+d Distribution-Date: 20260417
 d
-p diddesign DIDdesign: Difference-in-Differences Analysis
+p diddesign diddesign: Double DID estimation in Stata
