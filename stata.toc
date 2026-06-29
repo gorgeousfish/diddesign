@@ -12,6 +12,6 @@ d (https://github.com/naoki-egami/DIDdesign).
 d
 d Requires: Stata 16.0 or later
 d
-d Distribution-Date: 20260417
+d Distribution-Date: 20260628
 d
 p diddesign diddesign: Double DID estimation in Stata

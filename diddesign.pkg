@@ -24,7 +24,82 @@ d parallel bootstrap; equivalence-based pre-treatment diagnostics.
 d
 d Requires: Stata 16.0 or later
 d
-d Distribution-Date: 20260417
+d Distribution-Date: 20260628
+d
+d ============================================================================
+d INSTALLATION FILES
+d ============================================================================
+d
+d Ado Files (Commands):
+f ado/diddesign.ado
+f ado/diddesign_check.ado
+f ado/diddesign_plot.ado
+f ado/_diddesign_parse.ado
+f ado/_diddesign_prep.ado
+f ado/_diddesign_utils.ado
+f ado/_diddesign_expand_covariates.ado
+f ado/_diddesign_sa.ado
+f ado/_diddesign_error.ado
+f ado/_diddesign_warning.ado
+f ado/_diddesign_display_header.ado
+f ado/_diddesign_display_footer.ado
+f ado/_diddesign_display_result.ado
+f ado/_diddesign_display_table_header.ado
+f ado/_diddesign_parallel_boot.ado
+f ado/_diddesign_parallel_worker.ado
+f ado/_diddesign_load_mata.ado
+d
+d Mata Files (Core Computation):
+f mata/diddesign_mata.do
+f mata/did_utils.mata
+f mata/did_estimators.mata
+f mata/did_bootstrap.mata
+f mata/did_gmm.mata
+f mata/did_sa.mata
+f mata/did_check.mata
+d
+d Help Files (Documentation):
+f sthlp/diddesign.sthlp
+f sthlp/diddesign_check.sthlp
+f sthlp/diddesign_plot.sthlp
+f sthlp/diddesign_intro.sthlp
+d
+d ============================================================================
+d ANCILLARY FILES (Examples and Data)
+d ============================================================================
+d
+f examples/example_paglayan.do
+f examples/example_malesky.do
+f examples/example_kdid.do
+F malesky2014.dta
+F paglayan2019.dta
+v 3
+d diddesign: Double DID estimation with multiple pre-treatment periods in Stata
+d
+d Version: 1.0.0
+d
+d Authors: Xuanyu Cai (xuanyuCAI@outlook.com)
+d          Wenli Xu (wlxu@cityu.edu.mo)
+d          City University of Macau
+d
+d Methodology by Naoki Egami and Soichiro Yamauchi (2023,
+d Political Analysis); see original R package DIDdesign at
+d https://github.com/naoki-egami/DIDdesign.
+d
+d Support: https://github.com/gorgeousfish/diddesign
+d
+d Stata implementation of the Double DID estimator and the generalized
+d K-DID extension of Egami and Yamauchi (2023), combining standard DID
+d and sequential DID via efficient GMM on panels with multiple
+d pre-treatment periods.
+d
+d Features: Double DID via GMM; generalized K-DID with kmax() option;
+d Hansen J-test diagnostic pre-screening; staggered adoption design;
+d parallel bootstrap; equivalence-based pre-treatment diagnostics.
+d
+d Requires: Stata 16.0 or later
+d
+d Distribution-Date: 20260628
 d
 d ============================================================================
 d INSTALLATION FILES

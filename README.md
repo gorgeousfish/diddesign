@@ -100,44 +100,48 @@ The 95% standardized equivalence CI is reported in units of baseline control gro
 
 ## Installation
 
-### Install the package
+### From SSC (recommended)
+
+```stata
+ssc install diddesign
+```
+
+### From GitHub (development version)
 
 ```stata
 net install diddesign, from("https://raw.githubusercontent.com/gorgeousfish/diddesign/main")
 ```
 
-This automatically installs:
-- All commands and help files
-- Example data files (`malesky2014.dta`, `paglayan2019.dta`)
+Both methods install the commands and help files. The example datasets are distributed as ancillary files and must be downloaded separately:
 
-### Verify Installation
+```stata
+net get diddesign
+```
+
+This places `malesky2014.dta` and `paglayan2019.dta` in your current working directory.
+
+### Verify installation
 
 ```stata
 which diddesign
 help diddesign
-sysuse dir
 ```
 
 ## Quick Start with Examples
 
-After installation, the example datasets are automatically available:
+After downloading the ancillary files with `net get diddesign`, load data with `use`:
 
 ```stata
 * Load Vietnam communes data
-sysuse malesky2014, clear
+use malesky2014, clear
 
-* Load US states panel data  
-sysuse paglayan2019, clear
-
-* Download optional example scripts to the current directory
-net get diddesign
+* Load US states panel data
+use paglayan2019, clear
 
 * Run complete example analyses
 do example_malesky.do
 do example_paglayan.do
 ```
-
-**Note:** Bundled datasets are installed to Stata's example-data search path, so use `sysuse`, not `use`.
 
 ## Recommended Workflow
 
@@ -652,23 +656,23 @@ AGPL-3.0. See [LICENSE](LICENSE) for details.
 
 ## Citation
 
-If you use this package in your research, please cite both the methodology paper and the Stata implementation:
+If you use this package in your research, please cite both the software and the methodology paper:
 
-**APA Format:**
-
-> Cai, X., & Xu, W. (2025). *diddesign: Stata module for Double Difference-in-Differences estimation* (Version 0.1.0) [Computer software]. GitHub. https://github.com/gorgeousfish/diddesign
+> Cai, X., & Xu, W. (2026). DIDDESIGN: Stata module to perform Double Difference-in-Differences Estimation. Statistical Software Components S459771, Boston College Department of Economics.
 >
 > Egami, N., & Yamauchi, S. (2023). Using Multiple Pretreatment Periods to Improve Difference-in-Differences and Staggered Adoption Designs. *Political Analysis*, 31(2), 195-212. https://doi.org/10.1017/pan.2022.8
 
 **BibTeX:**
 
 ```bibtex
-@software{diddesign2025stata,
-  title={diddesign: Stata module for Double Difference-in-Differences estimation},
+@Misc{repec:boc:bocode:s459771,
   author={Xuanyu Cai and Wenli Xu},
-  year={2025},
-  version={0.1.0},
-  url={https://github.com/gorgeousfish/diddesign}
+  title={DIDDESIGN: Stata module to perform Double Difference-in-Differences Estimation},
+  howpublished={Statistical Software Components, Boston College Department of Economics},
+  year={2026},
+  month={Jun},
+  number={S459771},
+  url={https://ideas.repec.org/c/boc/bocode/s459771.html}
 }
 
 @article{egami2023using,
